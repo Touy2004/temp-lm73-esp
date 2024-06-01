@@ -15,7 +15,7 @@ float TemperatureSensor::readTemperature() {
     uint8_t count = Wire1.requestFrom(LM73_ADDR, 2);
     float temp = 0.0;
     if (count == 2) {
-        byte buff[2];
+        uint8_t buff[2];
         buff[0] = Wire1.read();
         buff[1] = Wire1.read();
         temp += (int)(buff[0] << 1);
