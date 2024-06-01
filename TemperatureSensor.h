@@ -3,7 +3,7 @@
 
 #include <Wire.h>
 
-#define LM73_ADDR 0x4D  // Fixed I2C address for the LM73 sensor
+#define LM73_ADDR 0x4D 
 
 class TemperatureSensor {
 public:
